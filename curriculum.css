@@ -1,0 +1,469 @@
+/** Imagen de fodo para toda la pantalla*/
+body {
+    background-color: beige;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+/** Definicion de estilo del p, h1*/
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto;
+    font-size: 20;
+    line-height: 2;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 60px;
+    padding-left: 12px;
+    font-weight: 70;
+    margin-left: 120px;
+}
+
+
+/** Estilo de la linea divisoria*/
+hr {
+    height: 2px;
+    background-color: black;
+    width: 100%;   
+}
+
+
+
+/**Definicion de Columnas*/
+.contenedor {    
+display: flex;
+width: 100%;
+}
+
+@media screen and (max-width:600px){
+};
+    
+
+.contenedor.lateral {
+width: 18%;
+}
+
+.lateral {
+background-color:rgba(0, 0, 0, 0.952);
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.contenedor.principal {
+width: 82%; 
+}
+
+
+/** Definicion de estilos de la Columna Central*/
+
+.encabezado {
+    padding-left: 1%;
+    padding-top: 1px;
+    float:initial;
+    color: black;
+    text-align:left;
+    font-size: 22px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    background-image: linear-gradient(to bottom, #3b3b5a, #aeaed4); height: 250px;
+    border-left: solid red 15px;  
+}
+
+.cuerpocolumnaprincipal {
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2%;
+    margin-left: 150px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+
+.cuerpocolumnaprincipal h2 {
+    font-style: italic; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cuerpocolumnaprincipal p {
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto;
+    font-size: 20;
+    line-height: 2;
+}
+
+.cuerpocolumnaprincipal table {
+    width: 100%;
+    border-spacing: 90px;
+    border-collapse: separate;
+}
+
+.cuerpocolumnaprincipal td {
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 20px;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    vertical-align: text-bottom;
+}
+
+.cuerpocolumnaprincipal tr {
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 20px;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    vertical-align: text-bottom;
+}
+
+
+
+#ano {
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+.progreso {
+    background-image: linear-gradient(to bottom, #2727ad, #e9e9f3); height: 300px;
+    color: white;
+    font-weight: bold;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+}
+
+.barra-progreso:not(:last-child) {
+    margin-bottom: 30px;
+}
+.barra-animada{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.menu {
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+.menu div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius:  10px; 
+    background-color: red;
+}
+
+/**Animacion de Conocimientos*/
+ #html-menu {
+    animation: html-barra 5s forwards;
+ }
+
+ @keyframes html-barra {
+    100%{
+        width: 50%;
+    }
+ }
+ #css-menu {
+    animation: css-barra 5s forwards;
+ }
+ @keyframes css-barra {
+    100%{
+        width: 50%;
+    }
+ }
+ #excel-menu {
+    animation: excel-barra 5s forwards;
+ }
+ @keyframes excel-barra {
+    100%{
+        width: 95%;
+    }
+}
+#word-menu {
+    animation: word-barra 5s forwards;
+ }
+ @keyframes word-barra {
+    100%{
+        width: 90%;
+    }
+}
+#access-menu {
+    animation: access-barra 5s forwards;
+ }
+ @keyframes access-barra {
+    100%{
+        width: 70%;
+    }
+}
+
+
+/** Definicion de los Estilos de la columna Lateral*/
+
+#apellido {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+#profesion {
+    padding-left: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 120px;
+}
+
+img {
+    width: 100%;
+    color: white;
+}
+
+.datospersonales {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.datos {
+    height: 5px;
+    background-image: linear-gradient(to bottom,rgb(15, 15, 1),rgb(197, 197, 15));
+    width: auto;  
+}
+
+.educacion {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 0.5px;
+}
+
+.institutos {
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto;
+    font-size: 12px;
+    padding-left: 20px;
+    color: white;
+}
+
+ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ul li {
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto;
+    font-size: 12px;
+    padding-left: 40px;
+    color: white;
+    background-image: linear-gradient(to bottom,rgb(15, 15, 1),rgb(197, 197, 15));
+    background-position: 0 0;
+    background-size: 40px 17px;
+    background-repeat: no-repeat;
+    background-color: rgba(54, 54, 54, 0.747);height: 15px;
+    padding-top: 2px;
+
+}
+
+ul p {
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto;
+    font-size: 12px;
+    padding-left: 40px;
+    color: white;
+}
+
+/**boton animado para los certificado*/
+.boton_animado {
+    background: #030370; /* color de fondo */
+    color: #eaeaf8; /* color de fuente */
+    border: 2px solid #fcf8f9; /* tamaño y color de borde */
+    padding: 2px 2px;
+    border-radius: 30px; /* redondear bordes */
+    position: relative;
+    z-index: auto;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .boton_animado:hover {
+    color: #080808;/* color de fuente hover */
+    z-index: 0;
+  }
+  .boton_animado:after {
+    content: "";
+    background: #6cbe0e; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 2px 2px;
+    display: block;
+    border-radius: -100%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }
+  .boton_animado:hover:after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+}  
+
+.botonimprimir {
+    background-image: linear-gradient(to top, rgb(61, 16, 221), rgb(15, 212, 226) );
+    border-radius: 50px;
+    color: white ;
+    padding: center;
+}
+
+
+/**Para crear las ventanas modales de los certificados */
+
+
+.contador {
+    position: fixed;
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.contador--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contador_container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: beige;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+
+.contador_title {
+    font-size: 2.5rem;
+}
+
+
+.contador_img {
+    width: 90%;
+    max-width: 800px;
+}
+
+.contador_close {
+    text-decoration: none;
+    color: white;
+    background-color: #f26250;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.contador_close:hover {
+    color: #f26250;
+    background-color: white;
+
+}
+
+
+
+.especialista {
+    position: fixed;
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.especialista--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.especialista_container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: beige;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+
+.especialista_title {
+    font-size: 2.5rem;
+}
+
+
+.especialista_img {
+    width: 90%;
+    max-width: 800px;
+}
+
+.especialista_close {
+    text-decoration: none;
+    color: white;
+    background-color: #f26250;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.especialista_close:hover {
+    color: #f26250;
+    background-color: white;
+
+}
+
+
+
